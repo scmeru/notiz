@@ -1,0 +1,336 @@
+/* ========== GLOBAL STYLING ========== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== HEADER ========== */
+header {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #E4D1B9;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header .sub-title {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #fff;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    background-color: rgba(173, 139, 115, 0); /* Transparent */
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+.navbar-container {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+}
+
+.dropdown-menu {
+    background-color: #AD8B73;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: #CEAB93;
+    color: #fff;
+}
+
+#searchForm {
+    margin-left: auto;
+}
+
+.btn-outline-success {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline-success:hover {
+    background-color: #fff;
+    color: #FF90BC;
+    border-color: #fff;
+}
+
+/* ========== SPACING UTILITIES ========== */
+.buttbawah {
+    margin-bottom: 93px;
+}
+
+.atas {
+    margin-top: 30px;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    margin: 30px 0;
+}
+
+main .section-title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+main .kiri {
+    padding-right: 20px;
+}
+
+main .kiri a {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+main .kiri a:hover {
+    text-decoration: underline;
+}
+
+/* ========== CARD PRODUK ========== */
+/* ========== CARD PRODUK ========== */
+main .kanan .produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100%;
+    max-width: 40rem;
+    height: 25rem;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px;
+    background-color: #ffffff; /* Set background to white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover img {
+    transform: scale(1.10);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Atur tinggi gambar agar tetap konsisten */
+    object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+    border-bottom: 1px solid #ddd; /* Light border for the image section */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333333; /* Darker text for contrast */
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.card-title:hover {
+    text-decoration: underline;
+}
+
+.card-harga {
+    color: #ED7D31; /* Orange color for the price */
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ========== KELOLA ARTIKEL ========== */
+.artikel-container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.artikel-container:hover {
+    transform: scale(1.004);
+}
+
+.artikel-header {
+    background-color: #AD8B73;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.artikel-title {
+    color: #555;
+    padding: 10px;
+}
+
+.artikel-body {
+    padding: 20px;
+}
+
+/* ========== PRODUK DETAIL ========== */
+.produk {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.produk-kiri img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.produk-kanan {
+    max-width: 600px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.judul {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222831;
+}
+
+.deskripsi {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.harga {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ED7D31;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .produk {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produk-kanan {
+        max-width: 100%;
+    }
+}
+
+/* ========== KATEGORI ========== */
+.section-title h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.kategori-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.kategori-button {
+    background-color: #FFB300;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin: 5px 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.kategori-button:hover,
+.kategori-button.active {
+    background-color: #FF8F00;
+    color: white;
+    text-decoration: none;
+}
+
+/* ========== MISC ========== */
+.nogaris {
+    text-decoration: none;
+    color: black;
+}
+
+.view-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
