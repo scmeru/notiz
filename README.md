@@ -1,2 +1,9 @@
 # notiz
 http://notiz.great-site.net/
+WEB KATALOG KAFE NOTIZ HUT
+
+NAMA ANGGOTA KELOMPOK 4 :
+
+1. Zuwita Manda		(2271020169)   (MEMBUAT PPT)
+2. Restu Setiawan		(2271020148) (MEMBUAT PROPOSAL)
+3. Yusuf Alfauzi		(2271020166)   (MEMBUAT CODINGAN)
