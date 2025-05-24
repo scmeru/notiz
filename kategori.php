@@ -25,7 +25,7 @@
                     <div class="card">
                         <a href="produk.php?judul=<?php echo urlencode($prod['judul']) ?>#detail-produk">
                             <div class="card-image-top">
-                                <img src="<?php echo $prod['gambar_path']; ?>" alt="">
+                                <img class="card-img-top" src="<?php echo $prod['gambar_path']; ?>" alt="<?php echo $prod['judul']; ?>">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
